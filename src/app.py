@@ -34,14 +34,13 @@ def main():
     prediction = model.predict(input_data)[0]
 
     st.subheader("Prediction Result")
-    st.write(f"For the given input values, the Home Price Index (HPI) is {prediction:.5f}, indicating a "
-             f"{prediction - 100:.2f}% increase since the base period (January 2000, HPI = 100). This means home "
-             f"prices are {prediction / 100:.3f} times higher than the base value.")
+    st.write(f"For the given input values, the Home Price Index (HPI) is **{prediction:.5f}**, indicating a "
+             f"**{prediction - 100:.2f}%** increase since the base period (January 2000, HPI = 100). This means home "
+             f"prices are **{prediction / 100:.3f}** times higher than the base value.")
     
     base_price = 100000  # Example base price in USD
     current_price = base_price * (prediction / 100)
-    st.write(f"Example: If a house cost $ 100,000 in January 2000, it would cost $ {current_price} for these "
-             f"given input values.")
+    st.write(f"Example: If a house cost **100,000 USD** in January 2000, it would cost **{current_price:.2f}** USD for these given input values.")
 
 if __name__ == "__main__":
     main()
