@@ -1,2 +1,2 @@
 model : https://vamshikrsna-ushomepricecasestudy-srcapp-bwbzkh.streamlit.app/
-dataviz board : 
+dataviz board : https://vamshikrsna-ushomepricecasestudy-srcdataviz-lehvy7.streamlit.app/
