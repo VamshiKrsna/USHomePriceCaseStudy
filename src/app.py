@@ -10,13 +10,13 @@ def main():
     st.sidebar.header("Input Parameters")
 
     cpi = st.sidebar.number_input("Consumer Price Index (CPI)", min_value=0.0, value=260.0)
-    federal_funds_rate = st.sidebar.number_input("Federal Funds Rate", min_value=0.0, max_value=1.0, value=0.05)
+    federal_funds_rate = st.sidebar.number_input("Federal Funds Rate", min_value=0.0, max_value=10.0, value=0.05)
     gdp = st.sidebar.number_input("Gross Domestic Product (GDP) in Billion USD", min_value=0.0, value=21000.0)
     housing_starts = st.sidebar.number_input("Housing Starts (in Thousands)", min_value=0.0, value=1200.0)
     crude_oil_prices = st.sidebar.number_input("Crude Oil Prices (in USD per Barrel)", min_value=0.0, value=70.0)
     median_household_income = st.sidebar.number_input("Median Household Income (in USD)", min_value=0.0, value=68000.0)
     population = st.sidebar.number_input("Population (in Thousands)", min_value=0.0, value=330000.0)
-    unemployment_rate = st.sidebar.number_input("Unemployment Rate", min_value=0.0, max_value=1.0, value=0.05)
+    unemployment_rate = st.sidebar.number_input("Unemployment Rate", min_value=0.0, max_value=20.0, value=0.05)
     building_permits = st.sidebar.number_input("Building Permits (in Thousands)", min_value=0.0, value=1300.0)
 
     input_data = pd.DataFrame({
